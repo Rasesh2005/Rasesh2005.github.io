@@ -53,6 +53,12 @@ const check_for_winner = () => {
         winner.innerText = "Player Won!!";
         winner.classList.add("playerWin");
         board_full = true
+         // Confetti Code here
+        var confettiElement = document.getElementById('my-canvas');
+        var confettiSettings = { target: confettiElement };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+        setTimeout(() => {confetti.clear()}, 3000); // clearing after 3
     } else if (res == computer) {
         winner.innerText = "Computer Won";
         winner.classList.add("computerWin");
@@ -235,3 +241,8 @@ const reset_board = () => {
 
 //initial render
 render_board();
+//dark mode
+const myFunction = ()=> {
+    var element = document.body;
+    element.classList.toggle("dark");
+}
