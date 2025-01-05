@@ -9,7 +9,7 @@ export const projectsData = [
     title: "GIF Question Answering MultiModal ML Training",
     description: "Designed and trained a custom architecture for GIF Visual Question Answering using PyTorch, incorporating BLIP-2's qformer and Llama3.2-1b.",
     technologies: "PyTorch, BLIP-2, Llama3.2-1b",
-    link: "https://www.kaggle.com/code/raseshshetty/inter-iit-ml-gif-llama"
+    link: "https://drive.google.com/file/d/1zjEMYnVVtuPNmtgSio2b6DPIzgpERxgj/view?usp=sharing"
   },
   {
     "title": "Retinal Blood Vessel Segmentation with UNet3+",
@@ -51,6 +51,7 @@ export const achievementsData = [
   { title: "JEE Advanced", detail: "AIR 1587", link: "#" },
   { title: "JEE MAINS", detail: "99.8%ile AIR 2403", link: "#" },
   { title: "BITSAT", detail: "Score 352/390", link: "#" },
+  { title: "WBJEE", detail: "Rank 196", link: "#" },
   { title: "CodeChef", detail: "4* Coder", link: "https://www.codechef.com/users/rasesh_shetty" },
   { title: "Codeforces", detail: "Specialist", link: "https://codeforces.com/profile/ReaperScythe21" }
 ];
