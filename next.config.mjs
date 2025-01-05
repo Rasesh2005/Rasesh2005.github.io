@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath:"",
-    output: "export",
+    images: {
+        domains: ['lh3.googleusercontent.com'],
+      },
     reactStrictMode: true,
 };
 
