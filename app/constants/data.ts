@@ -25,37 +25,41 @@ export const projectsData = [
   },  
   {
     title: "Differential Equation Solver",
-    description: "Trained Neural Networks to solve Ordinary Differential Equations using PyTorch, gaining insights into function learning and Graph-based ML.",
+    description: "Trained Neural Networks to solve Ordinary Differential Equations using PyTorch, gaining insights into function learning using Neural Networks.",
     technologies: "PyTorch, Neural Networks",
     link: "https://github.com/Rasesh2005/Differential-Equation-Solver"
-  }
+  },
 ];
 
-export const educationData = {
-  institution: "Indian Institute of Technology (BHU), Varanasi",
-  degree: "Integrated Dual Degree in Mathematics and Computing",
-  duration: "August 2023 - Present",
-  cpi: "9.43/10",
-  coursework: "Data Structures and Algorithm, Computer System Organisation, Discrete Mathematics, Real Analysis, Linear"
-};
+export const educationData = [
+  {
+    institution: "Indian Institute of Technology (BHU), Varanasi",
+    degree: "Integrated Dual Degree in Mathematics and Computing",
+    duration: "August 2023 - Present",
+    cpi: "9.43/10",
+    coursework: "Data Structures and Algorithm, Computer System Organisation, Discrete Mathematics, Real Analysis, Linear Algebra"
+  },
+  // You can add more education entries here
+];
 
 export const publicationsData = [
   {
     title: "Understanding the World's Museums through Vision-Language Reasoning",
     description: "Collecting and curating a large-scale dataset of 65M images and 200M question-answer pairs in the standard museum catalog format for exhibits from all around the world; training large vision-language models on the collected dataset, and benchmarking their ability on five visual question answering tasks.",
     link: "https://arxiv.org/abs/2412.01370"
-  }
+  },
 ];
 
-export const achievementsData = [
+export const academicAchievementsData = [
   { title: "JEE Advanced", detail: "AIR 1587", link: "#" },
   { title: "JEE MAINS", detail: "99.8%ile AIR 2403", link: "#" },
   { title: "BITSAT", detail: "Score 352/390", link: "#" },
-  { title: "WBJEE", detail: "Rank 196", link: "#" },
-  { title: "CodeChef", detail: "4* Coder", link: "https://www.codechef.com/users/rasesh_shetty" },
-  { title: "Codeforces", detail: "Specialist", link: "https://codeforces.com/profile/ReaperScythe21" }
 ];
 
+export const technicalAchievementsData = [
+  { title: "CodeChef", detail: "4* Coder", link: "https://www.codechef.com/users/rasesh_shetty" },
+  { title: "Codeforces", detail: "Specialist", link: "https://codeforces.com/profile/ReaperScythe21" },
+];
 export const skillsData = [
   "Python","PyTorch", "TensorFlow",
   "Data Structures and Algorithms","JavaScript",

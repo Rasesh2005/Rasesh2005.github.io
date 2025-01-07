@@ -7,6 +7,9 @@ export const siteConfig = {
   links: {
     linkedin: "https://linkedin.com/in/rasesh-shetty",
     github: "https://github.com/Rasesh2005",
+    twitter: "https://twitter.com/rasesh_shetty",
+    email: "mailto:rasesh.udayshetty@gmail.com",
+    resume: "https://drive.google.com/file/d/1InUvl2S3F5Q8J3vwzxlfGkKSPr7xpkSG/view?usp=share_link" // Replace with your actual resume link
   },
 }
 

@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { siteConfig } from '../app/constants/text'
+import { Github, Linkedin, Twitter, Mail } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -25,14 +26,50 @@ export default function Hero() {
           >
             {siteConfig.title}
           </motion.p>
-          <motion.a 
-            href="#contact" 
-            className="bg-blue-600 text-white py-2 px-6 rounded-full font-bold hover:bg-blue-700 transition duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <motion.div 
+            className="flex gap-4 mt-4 justify-center md:justify-start"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Get in Touch
-          </motion.a>
+            <a href={siteConfig.links.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-10 h-10 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+              <Github className="h-5 w-5" />
+            </a>
+            <a href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-10 h-10 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+              <Linkedin className="h-5 w-5" />
+            </a>
+            <a href={siteConfig.links.twitter} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-10 h-10 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+              <Twitter className="h-5 w-5" />
+            </a>
+            <a href={siteConfig.links.email} className="inline-flex items-center justify-center w-10 h-10 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+              <Mail className="h-5 w-5" />
+            </a>
+          </motion.div>
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <motion.a 
+              href={siteConfig.links.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white py-2 px-6 rounded-full font-bold hover:bg-blue-700 transition duration-300 text-center"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Resume
+            </motion.a>
+            <motion.a 
+              href="#contact" 
+              className="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white py-2 px-6 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition duration-300 text-center"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get in Touch
+            </motion.a>
+          </motion.div>
         </div>
         {siteConfig.showPhoto && (
           <motion.div 
