@@ -58,7 +58,7 @@ export const academicAchievementsData = [
 
 export const technicalAchievementsData = [
   { title: "CodeChef", detail: "4* Coder", link: "https://www.codechef.com/users/rasesh_shetty" },
-  { title: "Codeforces", detail: "Specialist", link: "https://codeforces.com/profile/ReaperScythe21" },
+  { title: "Codeforces", detail: "Expert", link: "https://codeforces.com/profile/ReaperScythe21" },
 ];
 export const skillsData = [
   "Python","PyTorch", "TensorFlow",
