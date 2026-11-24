@@ -15,7 +15,25 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        mono: ["var(--font-mono)", "ui-monospace", "Menlo", "monospace"],
+      },
       colors: {
+        term: {
+          wall: "var(--wall)",
+          win: "var(--win)",
+          fg: "var(--fg)",
+          dim: "var(--dim)",
+          line: "var(--line)",
+          sel: "var(--sel)",
+          accent: "var(--brand)",
+          rose: "var(--rose)",
+          vio: "var(--vio)",
+          teal: "var(--teal)",
+          sky: "var(--sky)",
+          lime: "var(--lime)",
+          onaccent: "var(--on-brand)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
